@@ -1,0 +1,53 @@
+:root {
+  --white: #fff;
+  --gray-100: #e1e1e6;
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #202024;
+  --gray-900: #121214;
+
+  
+  --crops: linear-gradient(rgba(0,170,149,255), rgba(165,232,135,255));
+  --fruits: linear-gradient(rgba(255,144,55,255), rgba(164,237,114,255));
+  
+  --xp: linear-gradient(rgba(1,76,143,255), rgba(0,235,248,255));
+  --other: linear-gradient(rgba(185,69,127,255), rgba(254,128,171,255));
+
+  --cabbage: linear-gradient(rgba(154,39,125,255), rgba(212,120,213,255));
+  --cauliflower: linear-gradient(rgba(88,180,84,255), rgba(234,225,221,255));
+  --pumpkin: linear-gradient(rgba(253,103,23,255), rgba(252,202,2,255));
+  --carrot: linear-gradient(rgba(255,144,55,255), rgba(254,235,148,255));
+  --potato: linear-gradient(rgba(201,120,64,255), rgb(236,156,91));
+  --parsnip: linear-gradient(rgba(224,149,143,255), rgba(224,224,202,255));
+
+  --gold: linear-gradient(rgba(255,205,55,255), rgba(255,239,189,255));
+  --wood: linear-gradient(rgba(129,67,49,255), rgba(255,211,164,255));
+  --iron: linear-gradient(rgba(108,128,135,255), rgba(188,247,252,255));
+  --stone: linear-gradient(rgba(121,118,127,255), rgba(196,194,202,255));
+  
+  --apple: linear-gradient(rgba(211,51,25,255), rgba(218,116,136,255));
+  /* --apple: linear-gradient(rgb(247,79,113), rgb(239,151,158)); */
+  --blueberry: linear-gradient(rgba(94,41,205,255), rgba(128,149,255,255));
+  --orange: linear-gradient(rgba(255,144,55,255), rgba(255,176,55,255));
+
+  --egg: linear-gradient(rgba(255,214,160,255), rgba(255,249,219,255));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gray-300);
+  -webkit-font-smoothing: antialiased;  
+}
+
+body, input, textarea, button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
