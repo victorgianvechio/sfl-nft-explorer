@@ -40,261 +40,7 @@ const buffType = {
   MUTANT_CHICKEN: "mutant_chicken",
 };
 
-export const boosters = {
-  crops: [
-    {
-      name: "Cabbage Boy",
-      category: category.CROPS,
-      buff: buff.CABBAGE,
-      buffsType: [
-        {
-          type: buffType.BOOST,
-          description: "+0.25 cabbage",
-        },
-        {
-          type: buffType.COMBO,
-          description: "+0.15 cabbage with Cabbage Girl",
-        },
-        {
-          type: buffType.ALERT,
-          description: "Karkinos has no effect with Cabbage Boy",
-        },
-      ],
-      currentPrice: 0,
-      offerPrice: 0,
-      url: "434",
-      urlImg:
-        "https://i.seadn.io/gcs/files/02a0eacbf56270f822db210f8cdce4ad.png?auto=format&w=384",
-      collection: "Sunflower Land Collectibles",
-      isSelling: true,
-    },
-    {
-      name: "Cabbage Girl",
-      category: category.CROPS,
-      buff: buff.CABBAGE,
-      buffsType: [
-        {
-          type: buffType.COOLDOWN,
-          description: "-50% cabbage production time",
-        },
-        {
-          type: buffType.COMBO,
-          description: "+0.15 cabbage with Cabbage Boy",
-        },
-      ],
-      currentPrice: 0,
-      offerPrice: 0,
-      url: "435",
-      urlImg:
-        "https://i.seadn.io/gcs/files/7d3a80576797b264c0704e71629f3275.png?auto=format&w=384",
-      collection: "Sunflower Land Collectibles",
-      isSelling: true,
-    },
-    {
-      name: "Karkinos",
-      category: category.CROPS,
-      buff: buff.CABBAGE,
-      buffsType: [
-        {
-          type: buffType.BOOST,
-          description: "+0.1 cabbage",
-        },
-        {
-          type: buffType.ALERT,
-          description: "Karkinos has no effect with Cabbage Boy",
-        },
-      ],
-      currentPrice: 0,
-      offerPrice: 0,
-      url: "455",
-      urlImg: "",
-      collection: "Sunflower Land Collectibles",
-      isSelling: true,
-    },
-    {
-      name: "Lunar Calendar",
-      category: category.CROPS,
-      buff: buff.CROP,
-      buffsType: [
-        {
-          type: buffType.COOLDOWN,
-          description: "-10% crop production time",
-        },
-      ],
-      currentPrice: 0,
-      offerPrice: 0,
-      url: "448",
-      urlImg:
-        "https://i.seadn.io/gcs/files/46c3891d1c0b7a64bbe295bea122a9c3.png?auto=format&w=384",
-      collection: "Sunflower Land Collectibles",
-      isSelling: true,
-    },
-    {
-      name: "Nancy",
-      category: category.CROPS,
-      buff: buff.CROP,
-      buffsType: [
-        {
-          type: buffType.COOLDOWN,
-          description: "-15% crop production time",
-        },
-      ],
-      currentPrice: 0,
-      offerPrice: 0,
-      url: "420",
-      urlImg:
-        "https://i.seadn.io/gcs/files/1f3bc72b9fef92024deadbce39cb44c2.png?auto=format&w=384",
-      collection: "Sunflower Land Collectibles",
-      isSelling: true,
-    },
-    {
-      name: "Scarecrow",
-      category: category.CROPS,
-      buff: buff.CROP,
-      buffsType: [
-        {
-          type: buffType.BOOST,
-          description: "+20% crop",
-        },
-        {
-          type: buffType.COOLDOWN,
-          description: "-15% crop production time",
-        },
-      ],
-      currentPrice: 0,
-      offerPrice: 0,
-      url: "404",
-      urlImg:
-        "https://i.seadn.io/gcs/files/c01d91c4cb22d12f54ca2b9cad011f3a.png?auto=format&w=384",
-      collection: "Sunflower Land Collectibles",
-      isSelling: true,
-    },
-    {
-      name: "Kuebiko",
-      category: category.CROPS,
-      buff: buff.CROP,
-      buffsType: [
-        {
-          type: buffType.BOOST,
-          description: "+20% crop",
-        },
-        {
-          type: buffType.COOLDOWN,
-          description: "-15% crop production time",
-        },
-        {
-          type: buffType.SPECIAL,
-          description: "free seeds",
-        },
-      ],
-      currentPrice: 0,
-      offerPrice: 0,
-      url: "421",
-      urlImg:
-        "https://i.seadn.io/gcs/files/09aa31be98562261634f0033d4314d02.gif?auto=format&w=384",
-      collection: "Sunflower Land Collectibles",
-      isSelling: true,
-    },
-  ],
-  resources: [
-    {
-      name: "Tiki Totem",
-      category: category.RESOURCES,
-      buff: buff.WOOD,
-      buffsType: [
-        {
-          type: buffType.BOOST,
-          description: "+0.1 wood",
-        },
-      ],
-      currentPrice: 0,
-      offerPrice: 0,
-      url: "447",
-      urlImg:
-        "https://i.seadn.io/gcs/files/98850f52a5b332a61fec3513117596af.png?auto=format&w=384",
-      collection: "Sunflower Land Collectibles",
-      isSelling: true,
-    },
-    {
-      name: "Nugget",
-      category: category.RESOURCES,
-      buff: buff.GOLD,
-      buffsType: [
-        {
-          type: buffType.BOOST,
-          description: "+25% gold",
-        },
-      ],
-      currentPrice: 0,
-      offerPrice: 0,
-      url: "430",
-      urlImg:
-        "https://i.seadn.io/gcs/files/0d42db9656d796cde7f85a3e4fb84f06.gif?auto=format&w=384",
-      collection: "Sunflower Land Collectibles",
-      isSelling: true,
-    },
-  ],
-  fruits: [
-    {
-      name: "Lady Bug",
-      category: category.FRUITS,
-      buff: buff.APPLE,
-      buffsType: [
-        {
-          type: buffType.BOOST,
-          description: "+0.25 apple",
-        },
-      ],
-      currentPrice: 0,
-      offerPrice: 0,
-      url: "442",
-      urlImg:
-        "https://i.seadn.io/gcs/files/e59d0681c41fce422d2f91b8c3d5e0bd.gif?auto=format&w=384",
-      collection: "Sunflower Land Collectibles",
-      isSelling: true,
-    },
-  ],
-  xp: [
-    {
-      name: "Maneki Neko",
-      category: category.XP,
-      buff: buff.XP,
-      buffsType: [
-        {
-          type: buffType.SPECIAL,
-          description: "+1 food each 24 hours",
-        },
-      ],
-      currentPrice: 0,
-      offerPrice: 0,
-      url: "446",
-      urlImg:
-        "https://i.seadn.io/gcs/files/d0ec6cb215da3190f2e70d6f2a3e8b1b.gif?auto=format&w=384",
-      collection: "Sunflower Land Collectibles",
-      isSelling: true,
-    },
-    {
-      name: "Observatory",
-      category: category.XP,
-      buff: buff.XP,
-      buffsType: [
-        {
-          type: buffType.BOOST,
-          description: "+5% xp",
-        },
-      ],
-      currentPrice: 0,
-      offerPrice: 0,
-      url: "911",
-      urlImg:
-        "https://i.seadn.io/gcs/files/688137bb65b5a7e02e844706c6c7bad7.gif?auto=format&w=384",
-      collection: "Sunflower Land Collectibles",
-      isSelling: true,
-    },
-  ],
-};
-
-export const nft = [
+export const boosters = [
   {
     name: "Cabbage Boy",
     slug: "cabbage_boy",
@@ -309,10 +55,10 @@ export const nft = [
         type: buffType.COMBO,
         description: "Combo: +0.15 cabbage with Cabbage Girl",
       },
-      {
-        type: buffType.ALERT,
-        description: "Karkinos has no effect with Cabbage Boy",
-      },
+      // {
+      //   type: buffType.ALERT,
+      //   description: "Karkinos has no effect with Cabbage Boy",
+      // },
     ],
     currentPrice: 0,
     offerPrice: 0,
@@ -537,6 +283,10 @@ export const nft = [
         type: buffType.SPECIAL,
         description: "+1 bonus harvest",
       },
+      {
+        type: buffType.ALERT,
+        description: "not for sale",
+      },
     ],
     currentPrice: 0,
     offerPrice: 0,
@@ -552,7 +302,7 @@ export const nft = [
     buffsType: [
       {
         type: buffType.SPECIAL,
-        description: "+1 food each 24 hours",
+        description: "give a food every 24 hours",
       },
     ],
     currentPrice: 0,
@@ -586,7 +336,7 @@ export const nft = [
     buffsType: [
       {
         type: buffType.SPECIAL,
-        description: "give 1 airdrop each year",
+        description: "give an airdrop on Christmas day",
       },
     ],
     currentPrice: 0,
@@ -621,6 +371,10 @@ export const nft = [
       {
         type: buffType.SPECIAL,
         description: "+20% profit from beach bounty",
+      },
+      {
+        type: buffType.ALERT,
+        description: "not for sale",
       },
     ],
     currentPrice: 0,
@@ -1015,7 +769,7 @@ export const nft = [
     isSelling: true,
   },
   {
-    name: "Pablo The Bunny",
+    name: "Pablo the Bunny",
     slug: "pablo",
     category: category.CROPS,
     buff: buff.CARROT,

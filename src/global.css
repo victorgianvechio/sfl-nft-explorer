@@ -8,14 +8,13 @@
   --gray-800: #202024;
   --gray-900: #121214;
 
-  
-  --crops: linear-gradient(rgba(0,170,149,255), rgba(165,232,135,255));
+  --crops: linear-gradient(rgba(0,170,149,255), rgba(164,233,135,255));
   --fruits: linear-gradient(rgba(255,144,55,255), rgba(164,237,114,255));
   
   --xp: linear-gradient(rgba(1,76,143,255), rgba(0,235,248,255));
-  --other: linear-gradient(rgba(185,69,127,255), rgba(254,128,171,255));
+  --other: linear-gradient(rgb(188,68,124), rgb(251,131,172));
 
-  --cabbage: linear-gradient(rgba(154,39,125,255), rgba(212,120,213,255));
+  --cabbage: linear-gradient(rgba(173,64,157,255), rgba(212,121,212,255));
   --cauliflower: linear-gradient(rgba(88,180,84,255), rgba(234,225,221,255));
   --pumpkin: linear-gradient(rgba(253,103,23,255), rgba(252,202,2,255));
   --carrot: linear-gradient(rgba(255,144,55,255), rgba(254,235,148,255));
@@ -30,9 +29,10 @@
   --apple: linear-gradient(rgba(211,51,25,255), rgba(218,116,136,255));
   /* --apple: linear-gradient(rgb(247,79,113), rgb(239,151,158)); */
   --blueberry: linear-gradient(rgba(94,41,205,255), rgba(128,149,255,255));
-  --orange: linear-gradient(rgba(255,144,55,255), rgba(255,176,55,255));
+  /* --orange: linear-gradient(rgba(255,144,55,255), rgba(255,176,55,255)); */
+  --orange: linear-gradient(rgba(255,144,55,255), rgba(252,202,2,255));
 
-  --egg: linear-gradient(rgba(255,214,160,255), rgba(255,249,219,255));
+  --egg: linear-gradient(rgb(252,212,164), rgb(252,251,219));
 }
 
 * {
