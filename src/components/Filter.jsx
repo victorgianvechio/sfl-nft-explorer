@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import styles from './Filter.module.css';
 import { getResourceImg } from '../utils/getImages'
 
@@ -71,17 +73,49 @@ const IconOption = props => (
   </Option>
 );
 
-// export default () => (
-//   <Select
-//     closeMenuOnSelect={false}
-//     defaultValue={[colourOptions[0], colourOptions[1]]}
-//     isMulti
-//     options={colourOptions}
-//     styles={colourStyles}
-//   />
-// );
+export function Filter(props) {
 
-export function Filter() {
+  const [selectedOptions, setSelectedOptions] = useState([]);
+  const [data, setData] = useState(props.boosters);
+
+  const handleSelectChange = (selectedOptions) => {
+    // console.log(selectedOptions)
+    console.log(selectedOptions)
+    setSelectedOptions(selectedOptions);
+    data.filter((item) => {
+      selectedOptions.every(
+        (option) => {
+          // item[option.value].toString() === option.value
+        }
+      )
+    });
+  };
+
+  // const filteredData = data.filter((item) =>
+  //   item.FarmID.toString().includes(filterText.toString())
+  // );
+
+  // const filterOptions = (options, filter) => {
+  //   return options.filter(
+  //     (option) =>
+  //       option.label.toLowerCase().indexOf(filter.toLowerCase()) >= 0
+  //   );
+  // };
+
+  // const customFilterOption = (option, searchText) => {
+  //   const keywords = searchText.toLowerCase().split(' ');
+  //   const values = Object.values(option.data);
+  //   return keywords.every((keyword) =>
+  //     values.some((value) => value.toLowerCase().includes(keyword))
+  //   );
+  // };
+
+  // const filteredData = data.filter((item) =>
+  //   selectedOptions.every(
+  //     (option) => item[option.name].toString() === option.value
+  //   )
+  // );
+
   return(
     <Select
       className={styles.select}
@@ -89,27 +123,12 @@ export function Filter() {
       // defaultValue={[
       //   colourOptions[0], 
       //   colourOptions[1],
-      //   colourOptions[2],
-      //   colourOptions[3],
-      //   colourOptions[4],
-      //   colourOptions[5],
-      //   colourOptions[6],
-      //   colourOptions[7],
-      //   colourOptions[8],
-      //   colourOptions[9],
-      //   colourOptions[10],
-      //   colourOptions[11],
-      //   colourOptions[12],
-      //   colourOptions[13],
-      //   colourOptions[14],
-      //   colourOptions[15],
-      //   colourOptions[16],
-      //   colourOptions[17],
       // ]}
       isMulti
       options={colourOptions}
       styles={colourStyles}
       components={{ Option: IconOption }}
+      onChange={handleSelectChange}
       placeholder="Select resources to filter..."
     />
   )
