@@ -1,0 +1,111 @@
+export const colourOptions = [
+  {
+    value: "cabbage",
+    label: " cabbage",
+    color: "#9a267c",
+    isFixed: true,
+    // isDisabled: true
+  },
+  {
+    value: "carrot",
+    label: " carrot",
+    color: "#ff8848",
+    isFixed: true,
+  },
+  {
+    value: "potato",
+    label: " potato",
+    color: "#c87940",
+    isFixed: true,
+  },
+  {
+    value: "apple",
+    label: " apple",
+    color: "#d33319",
+    isFixed: true,
+  },
+  {
+    value: "orange",
+    label: " orange",
+    color: "#ff8900",
+    isFixed: true,
+  },
+  {
+    value: "pumpkin",
+    label: " pumpkin",
+    color: "#fcca02",
+    isFixed: true,
+  },
+  {
+    value: "blueberry",
+    label: " blueberry",
+    color: "#7733ff",
+    isFixed: true,
+  },
+  {
+    value: "parsnip",
+    label: " parsnip",
+    color: "#e1958e",
+    isFixed: true,
+  },
+  {
+    value: "cauliflower",
+    label: " cauliflower",
+    color: "#86c983",
+    isFixed: true,
+  },
+  {
+    value: "crops",
+    label: " crops",
+    color: "#01aa94",
+    isFixed: true,
+  },
+  {
+    value: "fruits",
+    label: " fruits",
+    color: "#fec34c",
+    isFixed: true,
+  },
+  {
+    value: "egg",
+    label: " egg",
+    color: "#fed7a0",
+    isFixed: true,
+  },
+  {
+    value: "gold",
+    label: " gold",
+    color: "#ffdb2c",
+    isFixed: true,
+  },
+  {
+    value: "iron",
+    label: " iron",
+    color: "#6c8186",
+    isFixed: true,
+  },
+  {
+    value: "stone",
+    label: " stone",
+    color: "#7b747c",
+    isFixed: true,
+  },
+  {
+    value: "wood",
+    label: " wood",
+    color: "#99503d",
+    isFixed: true,
+  },
+  {
+    value: "xp",
+    label: " xp",
+    color: "#01aeff",
+    isFixed: true,
+  },
+  {
+    value: "other",
+    label: " other",
+    color: "#fe80ab",
+    isFixed: true,
+  },
+];
