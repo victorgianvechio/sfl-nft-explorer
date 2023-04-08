@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import chroma from 'chroma-js';
+import $ from 'jquery';
 
 import { colourOptions } from '../utils/filters';
 import Select, { components } from 'react-select';
@@ -149,8 +150,13 @@ export function Card(props) {
               {/* Buffs */}
               <div className={styles.buffsContainer}>
                 {item.buffsType.map((buff, index) => (
-                  <img key={index} src={getBuffImg(buff.type)} data-toggle="tooltip" data-placement="bottom"
-                  title={buff.description}/>
+                  <img key={index} 
+                    src={getBuffImg(buff.type)} 
+                    data-toggle="tooltip" d
+                    ata-placement="bottom"
+                    title={buff.description}
+                    data-original-title={buff.description}
+                  />
                 ))}            
               </div>
 
