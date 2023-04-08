@@ -7,10 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "docker:build-img": "docker build . -t sfl-nft-explorer",
-    "docker:run-img": "docker run -d -p 3030:3030 --name sfl-nft-explorer --restart unless-stopped sfl-nft-explorer",
-    "docker:rm": "docker stop sfl-nft-explorer && docker rm sfl-nft-explorer && docker rmi sfl-nft-explorer",
-    "docker:explore": "docker exec -it sfl-nft-explorer bash"
+    "docker:build-img": "sudo docker build . -t sfl-nft-explorer",
+    "docker:run-img": "sudo docker run -d -p 3030:3030 --name sfl-nft-explorer --restart unless-stopped sfl-nft-explorer",
+    "docker:rm": "sudo docker stop sfl-nft-explorer && sudo docker rm sfl-nft-explorer && sudo docker rmi sfl-nft-explorer",
+    "docker:explore": "sudo docker exec -it sfl-nft-explorer bash"
   },
   "dependencies": {
     "chroma-js": "^2.4.2",
