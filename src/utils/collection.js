@@ -393,10 +393,10 @@ export const boosters = [
         type: buffType.SPECIAL,
         description: "Reduce wheat requirement for chickens 10%",
       },
-      {
-        type: buffType.MUTANT_CHICKEN,
-        description: "+0.001 chance to get a mutant chicken",
-      },
+      // {
+      //   type: buffType.MUTANT_CHICKEN,
+      //   description: "+0.001 chance to get a mutant chicken",
+      // },
     ],
     currentPrice: 0,
     offerPrice: 0,
@@ -414,10 +414,10 @@ export const boosters = [
         type: buffType.COOLDOWN,
         description: "-10% egg production time",
       },
-      {
-        type: buffType.MUTANT_CHICKEN,
-        description: "+0.001 chance to get a mutant chicken",
-      },
+      // {
+      //   type: buffType.MUTANT_CHICKEN,
+      //   description: "+0.001 chance to get a mutant chicken",
+      // },
     ],
     currentPrice: 0,
     offerPrice: 0,
@@ -435,10 +435,10 @@ export const boosters = [
         type: buffType.BOOST,
         description: "+10% egg",
       },
-      {
-        type: buffType.MUTANT_CHICKEN,
-        description: "+0.001 chance to get a mutant chicken",
-      },
+      // {
+      //   type: buffType.MUTANT_CHICKEN,
+      //   description: "+0.001 chance to get a mutant chicken",
+      // },
     ],
     currentPrice: 0,
     offerPrice: 0,
@@ -453,7 +453,7 @@ export const boosters = [
     buff: buff.EGG,
     buffsType: [
       {
-        type: buffType.MUTANT_CHICKEN,
+        type: buffType.SPECIAL,
         description: "2x chance to get mutant chicken",
       },
     ],

@@ -63,7 +63,7 @@ import PARSNIP_IMG from "../assets/resource/parsnip.png";
 
 // BUFFS IMAGES
 import BOOST_IMG from "../assets/buff/boost.png";
-import COOLDOWN_IMG from "../assets/buff/cooldown3.png";
+import COOLDOWN_IMG from "../assets/buff/cooldown.png";
 import SPECIAL_IMG from "../assets/buff/special.png";
 import WARNING_IMG from "../assets/buff/warning.png";
 import COMBO_IMG from "../assets/buff/combo.png";

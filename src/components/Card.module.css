@@ -31,8 +31,9 @@
 
 .card {
   margin: 2rem;
-  height: 22rem;
-  max-width: 15rem;
+  height: 24rem;
+  max-width: 16rem;
+  min-width: 16rem;
   border-radius: 1rem;
   box-shadow: 0 1.6px 1.6px rgba(0,0,0,.023),0 3.8px 3.8px rgba(0,0,0,.034),0 6.9px 6.9px rgba(0,0,0,.041),0 11.4px 11.4px rgba(0,0,0,.049),0 18.8px 18.8px rgba(0,0,0,.056),0 32.8px 32.8px rgba(0,0,0,.067),0 71px 71px rgba(0,0,0,.09);
   cursor: pointer;
@@ -180,7 +181,7 @@ a:link, a:visited, a:hover, a:active {
   align-items: center;
   justify-content: center;
   margin-top: 40px;
-  height: 102px;
+  height: 120px;
 }
 
 .imgContainer > img {
@@ -193,7 +194,7 @@ a:link, a:visited, a:hover, a:active {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-left: 1rem;
   position: relative;
 }
