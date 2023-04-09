@@ -708,7 +708,7 @@ export const boosters = [
     buffsType: [
       {
         type: buffType.BOOST,
-        description: "+20% potato",
+        description: "+20% chance to get an extra potato",
       },
     ],
     currentPrice: 0,
