@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import chroma from 'chroma-js';
-import $ from 'jquery';
 
 import { colourOptions } from '../utils/filters';
 import Select, { components } from 'react-select';
@@ -16,7 +15,7 @@ const colourStyles = {
   option: (styles, { data, isDisabled, isFocused, isSelected }) => {
     const color = chroma(data.color);
     return {
-      ...styles, 
+      ...styles,
       backgroundColor: isDisabled
         ? undefined
         : isSelected
@@ -68,7 +67,7 @@ const { Option } = components;
 const IconOption = props => (
   <Option {...props}>
     <img
-      src={getResourceImg(props.data.value)}
+      src={String(getResourceImg(props.data.value))}
       style={{ width: 20 }}
       alt={props.data.label}
     />
@@ -95,9 +94,8 @@ export function Card(props) {
 
       d.map(v2 => {
         filtered.push(v2)
-      })      
+      })
     });
-    
     setData(filtered);
   }
 
@@ -109,7 +107,7 @@ export function Card(props) {
           className={styles.select}
           closeMenuOnSelect={false}
           // defaultValue={[
-          //   colourOptions[0], 
+          //   colourOptions[0],
           //   colourOptions[1],
           // ]}
           isMulti
@@ -129,11 +127,11 @@ export function Card(props) {
 
               {/* Header - Type/Icon */}
               <div className={styles.header}>
-                <div className={styles.headerDescription}>          
-                  <span>{item.buff}</span> 
+                <div className={styles.headerDescription}>
+                  <span>{item.buff}</span>
                 </div>
                 <div className={styles.headerImg}>
-                  <img src={getResourceImg(item.buff)} />    
+                  <img src={String(getResourceImg(item.buff))}/>
                 </div>
               </div>
 
@@ -144,20 +142,20 @@ export function Card(props) {
 
               {/* NFT Image */}
               <div className={styles.imgContainer}>
-                <img src={getNftImg(item.slug)} />        
+                <img src={String(getNftImg(item.slug))} />
               </div>
-            
+
               {/* Buffs */}
               <div className={styles.buffsContainer}>
                 {item.buffsType.map((buff, index) => (
-                  <img key={index} 
-                    src={getBuffImg(buff.type)} 
+                  <img key={index}
+                    src={String(getBuffImg(buff.type))}
                     data-toggle="tooltip" d
                     ata-placement="bottom"
                     title={buff.description}
                     data-original-title={buff.description}
                   />
-                ))}            
+                ))}
               </div>
 
             </a>
